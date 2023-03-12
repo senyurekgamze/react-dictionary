@@ -1,3 +1,11 @@
+body {
+  background-color: #f0ece2;
+}
+
+a {
+  color: #596e79;
+}
+
 .App-footer {
   text-align: center;
   font-size: 12px;

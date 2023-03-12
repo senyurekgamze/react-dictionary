@@ -7,7 +7,7 @@ export default function App() {
       <div className="container">
         <main>
           {" "}
-          <Dictionary />{" "}
+          <Dictionary defaultKeyword="bicycle" />{" "}
         </main>
         <footer className="App-footer">
           <small>
