@@ -21,13 +21,9 @@ export default function Dictionary(props) {
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleDictionary);
-
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1 `;
-    let pexelsApiKey =
-      "JsCUz3xE676HHLE414sgmx1nGnxANvbik1VjctzKaLh6J3dBdBLTQpeW";
-    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-
-    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+    let sheCodesApiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
+    let sheCodesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${sheCodesApiKey} `;
+    axios.get(sheCodesApiUrl).then(handlePexelsResponse);
   }
 
   function handleSubmit(event) {
