@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #596e79;
+  color: #118df0;
 }
 
 .App-footer {
@@ -15,6 +15,7 @@ a {
 .App h1 {
   text-align: center;
   margin: 30px 0;
+  color: #004182;
 }
 
 .App {
